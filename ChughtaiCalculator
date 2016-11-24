@@ -1,0 +1,51 @@
+def adder(x, y)
+  x+y
+end
+def subtracter(x, y)
+  x-y
+end
+def multiplier(x, y)
+  x*y
+end
+def divider(x, y)
+  x/y
+end
+calcgo = true
+
+
+
+
+
+while calcgo=true
+puts "What would you like to do (Enter: add/subtract/multiply/divide)"
+calcopt = gets.chomp
+
+if calcopt == 'add'
+  puts "select your first number"
+    a = gets.to_i
+  puts "select your second number"
+    b = gets.to_i
+  puts adder(a,b)
+elsif calcopt== 'subtract'
+  puts "select your first number"
+    a = gets.to_i
+  puts "select your second number"
+    b = gets.to_i
+  puts subtracter(a,b)
+elsif calcopt == 'multiply'
+  puts "select your first number"
+    a = gets.to_i
+  puts "select your second number"
+    b = gets.to_i
+  puts multiplier(a,b)
+elsif calcopt == 'divide'
+  puts "select your first number"
+    a = gets.to_i
+  puts "select your second number"
+    b = gets.to_i
+  puts divider(a,b)
+else 
+  puts "invalid entry, please enter a valid entry"
+end
+end
+
